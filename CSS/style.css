@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: url("../img/snake.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    background: linear-gradient(yellow, green);
+    width: 90vmin;
+    height: 95vmin;
+    border: 3px solid white;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20, 1fr);
+}
+
+#scoreBox {
+    position: absolute;
+    top: 12px;
+    right: 100px;
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 60px;
+    right: 100px;
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: 'Rubik Bubbles', cursive;
+}
+
+.head {
+    background: linear-gradient(rgb(255, 145, 0), black);
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+    transform: scale(1.1);
+    border-radius: 13px;
+}
+
+.snake {
+    background: linear-gradient(red, black);
+    width: 20px;
+    height: 20px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.food {
+    background-color: red;
+    width: 18px;
+    height: 18px;
+    border: 2px solid limegreen;
+    border-radius: 90px;
+}
